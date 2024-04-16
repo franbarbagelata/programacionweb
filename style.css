@@ -1,13 +1,308 @@
-h1{
-    color: #5398BE;
-    font-size: 100px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background-color:#6A5B6E;
+
+main{
+    background-color: rgba(223, 223, 222, 0.808);
 }
-#foto{
-    size-adjust: 10px;
+
+.contenedor{
+    padding: 65px;
+    width: 100%;
+    max-width: 1800px;
+    margin: auto;
+    overflow: hidden;
 }
-#cursores{
-    color: blueviolet;
+
+.titulo{
+    color: #235789;
+    text-align: center;
+    margin-bottom: 55px;
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+;
 }
+
+header{
+    width: 100%;
+    height: 900px;
+    position: relative;
+    background-image: url(img/yo.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.texto-principal{
+    color:#E8B34B;
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.texto-principal h2{
+    margin-left: 800px;
+}
+
+menu{
+    padding: 50px 0px 0px 50px;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    max-width: 100%;
+}
+
+menu > a{
+    text-decoration: none;
+    font-size: 27px;
+    color: #E8B34B;
+    margin-right: 80px;
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+    align-items: center;
+    padding-bottom: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+menu > a:hover{
+    text-decoration: underline;
+}
+
+header .texto-principal{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.texto-principal h2{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.equipo{
+    width: 50%;
+    height: fit-content;
+}
+
+.textos{
+    width: 48%;
+    margin-top: 120px;
+    margin-left: 30px;
+}
+
+.textos h3{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.textos p{
+    padding: 0px 0px 30px 15px;
+    font-size: 25px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.tabla-posiciones p{
+    margin-bottom: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.foto-tabla{
+    height: 40vw;
+    margin: auto;
+    display: inline-block;
+}
+
+#tabla{
+    text-align: center;
+}
+
+.fotos-partidos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagenes{
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+.imagenes img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+footer{
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    
+}
+
+#nombre{
+    font-size: 80%;
+    text-align: center; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    height: 100%; 
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+#nombre:hover{
+    text-decoration: underline;
+}
+
+#texto-tabla{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media only screen and (max-width: 1300px) {
+    .menu a{
+        font-size: 10px;
+        margin-right: 45px;
+        margin-left: 0px;
+    }
+
+    .menu{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+    }
+
+    #galeria{
+        margin-right: 0px;
+    }
+
+    
+    .header{
+        max-width: 100%;
+    }
+
+    .foto-tabla{
+        display: inline-block;
+        margin: auto;
+        height: 400px;
+    }
+    .texto-principal h1{
+        font-size: 60px;
+        
+    }
+
+    .texto-principal {
+        padding-bottom: 250px;
+    }
+
+    .equipo{
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+    }
+
+    .sobre-nosotros{
+        display: block;
+        
+    }
+
+    .contenedor{
+        margin-bottom: 0px;
+        padding-bottom: 5px;
+        padding-top: 20px;
+    }
+
+    .tabla-posiciones{
+        margin-top: 0px;
+        
+    }
+
+    .textos{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .textos h3{
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    
+    .textos p{
+        font-size: 15px;
+        text-align: justify;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+
+    #tabla{
+        padding-top: 5px;
+    }
+
+    .titulo{
+        margin-bottom: 15px;
+    }
+
+    #ultimos-partidos{
+        padding-top: 0px;
+    }
+
+    .fotos-partidos{
+        display: block;
+    }
+
+    .imagenes{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .texto-principal h2{
+        margin-left: 0px;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 281px) {
+    .foto-tabla{
+        display: inline-block;
+        margin: auto;
+        height: 200px;
+        
+    }
+  }
