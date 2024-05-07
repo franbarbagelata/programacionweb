@@ -4,9 +4,7 @@
     box-sizing: border-box;
 }
 
-main{
-    background-color: rgba(223, 223, 222, 0.808);
-}
+
 
 .contenedor{
     padding: 65px;
@@ -295,6 +293,8 @@ footer{
         margin-left: 0px;
     }
 
+  
+
 
   }
 
@@ -306,3 +306,87 @@ footer{
         
     }
   }
+
+  #header-camiseta{
+    background-image: none;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    
+  }
+
+  #titulo-productos{
+    text-align: center;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color: #235789;
+    padding: 30px;
+
+  }
+
+  #seccion-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .fotos-productos{
+    max-width: 400px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .fotos-productos img{
+    width: 100%;
+    aspect-ratio: 0.9;
+  }
+
+  button:hover{
+    text-decoration: underline;
+  }
+
+  button{
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #235789;
+    border: unset;
+    border-radius: 5px;
+  }
+  
+  .fotos-productos h3,p{
+    padding: 7px;
+  }
+
+#footer-camiseta{
+    margin-top: 100px;
+}
+
+#carrito{
+    margin-top: 100px;
+    text-align: center;
+}
+
+#carrito h3,p{
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#carrito h3{
+    
+    color: #235789;
+    font-size: 40px;
+}
+
+#carrito ul{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media only screen and (max-width: 1300px) {
+    #header-camiseta{
+        height: 110px;
+    }
+}
