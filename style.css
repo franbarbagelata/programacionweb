@@ -175,7 +175,10 @@ footer{
 
 
 
-
+#boton-agregar{
+    margin-right: 5px;
+    
+}
 
 
 #nombre:hover{
@@ -293,8 +296,15 @@ footer{
         margin-left: 0px;
     }
 
-  
-
+    #ultimos-partidos{
+        margin-top: 140px;
+    }
+    #titulo-tabla{
+        margin-top: 140px;
+    }
+    #quienes{
+        margin-top: 140px;
+    }
 
   }
 
@@ -389,4 +399,11 @@ footer{
     #header-camiseta{
         height: 110px;
     }
+}
+
+span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

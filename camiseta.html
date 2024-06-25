@@ -12,9 +12,9 @@
     <header id="header-camiseta">
         <menu class="menu">
             <a href="index.html">Inicio</a>
-            <a href="camiseta.html">Camiseta</a>
-            <a href="#">Jugadores</a>
-            <a href="#" id="galeria">Galería</a>
+            <a href="camiseta.html">Indumentaria</a>
+            <a href="index.html#posiciones">Posiciones</a>
+            <a href="index.html#galeriafotos" id="galeria">Galería</a>
         </menu>
     </header>
     <main>
@@ -25,29 +25,30 @@
                     <img src="img/camiseta.jpeg" alt="foto camiseta">
                     <h3>Camiseta oficial 2024</h3>
                     <p>$10000</p>
-                    <button onclick="agregar('Camiseta oficial 2024',10000)">Agregar al carrito</button>
+                    <button onclick="agregarAlCarrito(1)">Agregar al carrito</button>
                 </div>
                 <div class="fotos-productos">
                     <img src="img/short.jpeg" alt="foto short">
                     <h3>Short oficial 2024</h3>
                     <p>$6000</p>
-                    <button onclick="agregar('Short oficial 2024',6000)">Agregar al carrito</button>
+                    <button onclick="agregarAlCarrito(2)">Agregar al carrito</button>
+                    
                 </div>
                 <div class="fotos-productos">
                     <img src="img/medias.png" alt="foto medias">
                     <h3>Medias oficiales 2024</h3>
                     <p>$3000</p>
-                    <button onclick="agregar('Medias oficiales 2024',3000)">Agregar al carrito</button>
+                    <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
                 </div>
             </div>
         </section>
 
         <section id="carrito">
             <h3>Carrito</h3>
-            <ul id="productos-carrito"></ul>
+            <div id="productos-carrito"></div>
             <p>Total: <span id="total-compra">$0</span></p>
-            <button>Comprar</button>
-            <button onclick="eliminarcarrito()">Eliminar productos</button>
+            <button onclick="compraRealizada()">Comprar</button>
+            <button onclick="vaciarCarrito()">Eliminar todo</button>
         </section>
 
     <footer id="footer-camiseta">
